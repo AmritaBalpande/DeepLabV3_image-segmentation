@@ -29,8 +29,8 @@ The output consists of:
 3. The script will perform segmentation using a pre-trained DeepLabV3 model and display the original and segmented images.
 
 ## Considerations
-- **Model Selection**: When using a pre-trained segmentation model like DeepLabV3, you can choose between different backbone architectures such as ResNet-50 and ResNet-101. The choice of model can affect the accuracy and speed of the segmentation.
-- **Computational Resource Requirements**: DeepLabV3 models are computationally intensive and may require significant resources, especially for large images. Running these models on a GPU can significantly speed up the inference process. Ensure that you have access to a suitable computational environment, such as Google Colab with GPU support.
+- **Model Selection**: When using a pre-trained segmentation model like DeepLabV3, you can choose between different backbone architectures such as ResNet-50 and ResNet-101. The choice of model can affect the accuracy and speed of the segmentation.In this case,the script allows switching between ResNet-50 and ResNet-101 models, providing flexibility to balance accuracy and computational resource requirements.
+- **Computational Resource Requirements**: DeepLabV3 models are computationally intensive and may require significant resources, especially for large images. Running these models on a GPU can significantly speed up the inference process. Ensure that you have access to a suitable computational environment, such as Google Colab with GPU support.In this case,it automatically uses a GPU if available, significantly speeding up the inference process. For environments without a GPU, the script defaults to CPU, ensuring broader applicability.
 
 # Here is the Python Code:
 # Install required libraries
